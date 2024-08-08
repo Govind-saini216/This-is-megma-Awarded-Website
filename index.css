@@ -1,0 +1,528 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Helvetica Neue';
+}
+
+
+html,
+body{
+    width: 100%;
+    height: 100%;
+}
+
+#main{
+    position: relative;
+    overflow: hidden;
+    background-color: #1239CC;
+}
+
+#page1{
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+}
+
+#page1>video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+#page1>nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100vw;
+    height: 10vh;
+    position: absolute;
+    padding: 0 30px;
+}
+
+#page1>nav>p{
+    font-size: 30px;
+    font-weight: 900;
+    color: transparent;
+    -webkit-text-stroke:1px rgb(10, 245, 136);
+}
+
+#Right-nav>button{
+    padding: 8px 15px;
+    border-radius: 50px;
+    outline: none;
+    color: #fff;
+    border: 1px solid #fff;
+    font-size: 15px;
+    background-color: #0b48ed;
+}
+
+#Bottom-page1{
+    position: absolute;
+    bottom: 5%;
+    left: 10%;
+    width: 50vw;
+    height: 35vh;
+}
+
+#Bottom-page1>h1{
+    color: #fff;
+}
+
+
+#Bottom_page1-inner{
+    position: absolute;
+    bottom: 0%;
+    width: 100%;
+    height: 40%;
+}
+
+#Bottom_page1-inner{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#Bottom_page1-inner>button{
+    padding:10px 20px ;
+    border-radius: 50px;
+    border: none;
+    color: #0b48ed;
+    font-size: 16px;
+}
+
+#Bottom_page1-inner>h4{
+    color: #fff;
+    font-size: 1.3vw;
+}
+
+#page2{
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    padding: 0vw 8vw;
+    background-color: #0a3cce;
+    color: #fff;
+    
+}
+
+#page2>h2{
+    margin-bottom:3vw;
+    font-weight: 100;
+}
+
+#page2>h1{
+    width: 100%;
+    font-size: 4vw;
+    font-weight: 100;
+    line-height: 1.2;
+    color: #dadada89;
+}
+
+#page3{
+    height: 100vh;
+    width: 100vw;
+ position: relative;
+    background-color: #0a3cce;
+}
+
+#page3>canvas{
+    max-width:100vw ;
+    max-height: 100vh;
+}
+
+#page4 {
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    background-color: #1239CC;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#page4>h3{
+    margin-left: 10vw;
+    color: #fff;
+    margin-bottom: 1vw;
+    font-weight: 100;
+    
+}
+#page4>h1{
+    width: 87%;
+    font-weight: 100;
+    margin-left: 10vw;
+    font-size: 4vw;  
+    color: #ffffff8c;
+}
+
+
+#page5{
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+}
+
+#page5>canvas{
+    position: relative;
+    max-width: 100vw;
+    max-height: 100vh;
+}
+
+#page6 {
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    background-color: #0D34C4;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#page6>h3 {
+    margin-left: 10vw;
+    color: #fff;
+    margin-bottom: 1vw;
+    font-weight: 100;
+    
+}
+
+#page6>h1 {
+    width: 87%;
+    font-weight: 100;
+    margin-left: 10vw;
+    font-size: 4vw;
+    color: #ffffff8c;
+}
+
+    #page7 {
+        height: 100vh;
+        width: 100vw;
+        position: relative;
+        background-color: #0D34C4;
+        display: flex;
+        align-items: start;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+        #page7>canvas {
+            position: relative;
+            max-width: 100vw;
+            max-height: 100vh;
+        }
+
+
+.page7-circle{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 10;
+    border: 1px solid #fff;
+    width: 25vw;
+    height: 57vh;
+    border-radius: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: #254cc3; */
+}
+
+.page7-inner-circle{
+    border: 1px solid #fff;
+    width: 13vw;
+    height: 30vh;
+    border-radius: 50%;
+    background-color: transparent ;
+}
+
+#page8{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background-color: #093DCC;
+}
+
+#page8>video{
+    width: 100%;
+    height: 100%;
+}
+
+#page8-bottom{
+    position: absolute;
+    left: 50%;
+    bottom: 5%;
+    transform: translateX(-50%);
+    text-align: center;
+}
+
+#page8-bottom>h1{
+    margin-bottom: 10%;
+    font-size: 5vw;
+    font-weight: 100;
+    color: #fff;
+}
+
+#page8-bottom>button{
+    padding: 10px 20px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+
+#page9{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    font-family:'Helvetica Neue';
+    display: flex;
+}
+
+#page9>.page9left {
+    position: relative;
+    width: 40vw;
+    height: 100%;
+}
+
+.page9left>h1{
+    position: absolute;
+    top: 15%;
+    right: 10%;
+    color: #fff;
+    font-size: 5vw;
+    transform: translateY(50%);
+   line-height: 1 ;
+   font-weight: 100;
+}
+
+#page9>.page9right {
+    position: relative;
+    width: 60vw;
+    height: 100%;
+}
+
+.right9-center{
+    width: 85%;
+    height: 60%;
+    background-color: black;
+    border-radius: 10px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-image: url(https://thisismagma.com/wp-content/uploads/2023/04/magma.wp2.cubdev.com-home-1.jpeg);
+    background-size: cover;
+    left: 5%;
+    
+}
+
+#page10{
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    color: #fff;
+}
+
+
+#page10>.page10-first{
+    position: absolute;
+    right: 5%;
+    width: 52%;    
+    margin-bottom: 20px;
+}
+
+#page10>.hh>h2{
+    padding-bottom:3px;
+}
+
+#page10>.page10-second{
+    position: absolute;
+    top: 20%;
+    right: 5%;
+    width: 52%;
+    margin-bottom: 20px;    
+}
+
+#page10>.page10-Third{
+    position: absolute;
+    top: 40%;
+    right: 5%;
+    width: 52%;
+}
+
+
+#page11{
+    width: 100vw;
+    height: 120vh;
+    position: relative;
+    font-family: 'Helvetica Neue';
+    background-color: #fff;
+    padding-bottom: 1%;
+}
+
+#page11>h1{
+    position: absolute;
+    top: 5%;
+    left: 7%;
+    font-size: 5vw;
+    font-weight: 100;
+}
+
+.page11-inner{
+    border-radius: 10px;
+    width: 100vw;
+    height: 30vh;
+    position: relative;
+    top: 20%;
+        left: 7%;   
+    margin-bottom:1%;
+    display: flex;
+    overflow: hidden;
+}
+
+.page11-left{
+    width: 40%;
+    height: 100%;
+    position: relative;
+}
+
+.page11-right{
+    width: 60%;
+    height: 100%;
+    position: relative;
+}
+
+.page11-left>img{
+        border-radius: 10px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    background-size: cover;
+}
+
+.page11-right{
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    left: 2%;
+    color: rgb(101, 107, 107);
+}
+
+.page11-right>h4{
+    font-weight: 100;
+}
+
+.page11-right>p{
+    font-size: 25px;
+    position: relative;
+}
+
+#page12{
+    width: 100vw;
+    height: 100vh;
+    background-color:#02268e ;
+    position: relative;
+}
+
+#page12-inner{
+    width: 450px;
+    height: 200px;
+    color: #fff;
+    position: absolute;
+    top: 40%;
+    right: 8%;
+}
+
+#page12-inner>h1{
+ font-size: 40px;
+}
+
+#page12-inner>p{
+    font-size: 20px;
+}
+
+#page13{
+    width: 100vw;
+    height: 70vh;
+    background-color: black;
+    position: relative;
+    color: #fff;
+    padding: 8% 14%;
+}
+
+#page13>h1{
+font-weight: 100;
+font-size: 5vw;
+}
+
+#page13>button{
+    background-color: #0b48ed;
+    color: #fff;
+    margin-top: 2%;
+    border-radius: 50px;
+    border: none;
+    padding: 10px 20px;
+}
+
+#page14{
+    width: 100vw;
+    height: 100vh;
+    background-color:black;
+}
+
+#page14-inner{
+    width: 100vw;
+    height: 25vh;
+    position: relative;
+    border-bottom: 1px solid gray;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0vw 10vw;
+    color: #fff;
+}
+
+#page14-inner>i{
+    font-weight: 100;
+    font-size: 2.5vw;
+}
+#page14-inner>h1{
+    font-weight: 100;
+    font-size: 3vw;
+}
+
+#page14-inner>h1 {
+    position: relative;
+    z-index: 2222;
+}
+
+#page14-inner>i {
+    position: relative;
+    z-index: 2222;
+}
+.center14{
+    width: 100%;
+    height: 0%;
+    background-color: #0b48ed;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    transition: all ease-in-out .4s;
+    z-index: 1111;
+}
+
+ #page14-inner:hover .center14{
+    height: 100%;
+} 
